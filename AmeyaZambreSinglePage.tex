@@ -1,0 +1,98 @@
+\documentclass[a4paper]{article}
+\usepackage{multirow}
+\usepackage{pifont}
+\usepackage{charter}
+\usepackage[margin=1cm]{geometry}
+
+%Custom commands
+\newcommand{\resumesection}[1]{
+	\vspace*{-0.5\baselineskip}
+	\begin{flushleft}
+		\large{\textbf{\uppercase{#1}}}
+	\end{flushleft}
+} %{title}
+\newcommand{\experiencesubsection}[3]{
+	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} p{7cm} l r}
+		\textbf{#1} & \textbf{#2} & \textbf{#3}
+	\end{tabular*}
+} %{Company}{Title}{Duration}
+\newcommand{\educationsubsection}[4]{
+	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
+		#1 & #2 \\
+		\textbf{#3} & #4\\
+	\end{tabular*}
+} %{Degree}{Duration}{University/College}{GPA}
+\newcommand{\horizontalrule}[1]{\noindent{\rule{\textwidth}{#1}}} %{lineWeight}
+\newcommand{\techitem}[1]{\item Technology: \textbf{#1}} %{Tools}
+\newcommand{\project}[3]{\item \textbf{#1:} #2\textbf{(#3)}} %{Title}{Description}{Tools}
+\newcommand{\customitemizespacing}{\addtolength{\itemsep}{-0.5\baselineskip}}
+
+\begin{document}
+\pagenumbering{gobble}
+
+%Header
+\center
+{
+	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
+		{\textbf{\begin{LARGE}Ameya Zambre\end{LARGE}}} & ameyazambre@gmail.com \\
+		3139 La Selva Cir, San Mateo CA 94403 & (313) 412 - 0669
+	\end{tabular*}
+}
+
+\horizontalrule{0.4pt}
+
+%Experience
+\resumesection{Experience}
+\experiencesubsection{Oracle America Inc.}{Senior Software Engineer}{Nov 2014 - Present}
+\experiencesubsection{}{Software Engineer}{Mar 2013 - Nov 2014}
+\begin{itemize}
+%\customitemizespacing
+	\item Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user.
+	\item Worked independently on a couple of features for the web client. Implemented a feature to provide freestyle drawing support and save it as a picture. Upgraded a dated HTML text editor to CKEditor with backward compatibility with textual data created with older editors.
+	\item Working independently on iPad application. 
+	Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well). Responsible for supporting all new features being developed on iPad browser and application and for uptaking latest iOS SDKs.
+	\techitem{Java, Javascript(HTML/CSS), Objective-C}
+\end{itemize}
+
+\experiencesubsection{Epic Systems}{Software Developer Intern}{May 2012 - Aug 2012}
+\begin{itemize}
+%\customitemizespacing
+	\item Designed and developed an effective direct manipulation based interface to help hospital staff assess Emergency Department status quickly and take appropriate actions right away.
+	\item Involved providing touch and vector graphics support to facilitate installations on big touch screens at triage stations and very intuitive interface so that the staff can start utilizing the tool with minimal training.
+	\techitem{C\#}
+\end{itemize}
+
+\experiencesubsection{Intel India Pvt. Ltd.}{Software Developer Intern}{Jan 2011 - Jun 2011}
+\begin{itemize}
+%\customitemizespacing
+	\item Developed a logging based debugging library to let developers easily create logs and figure out root cause of the issue at hand.
+	\item Developed a GUI framework of team's existing UI to make it easily reusable and adaptable by other teams.
+	\item Both projects helped improve team's efficiency by removing unnecessary and time-consuming tasks from developers' work.
+	\techitem{C\#}
+\end{itemize}
+
+
+%Skills
+\resumesection{Technical Skills}
+\begin{itemize}
+%\customitemizespacing
+	\item Java, Javascript, Objective-C, C, HTML/CSS, SQL
+	\item JDeveloper, Eclipse, XCode, Clearcase, Subversion
+\end{itemize}
+
+%Education
+\resumesection{Education}
+\educationsubsection{M.S. Computer Science}{2011 - 2012}{Georgia Institute of Technology(Georgia Tech)}{3.66 / 4.00}
+\newline
+\educationsubsection{B.E. Computer Science, M.Sc. Mathematics}{2006 - 2011}{Birla Institute of Technology and Science, Pilani(BITS Pilani)}{8.90 / 10.00}
+
+%Projects
+\resumesection{Projects}
+\begin{itemize}
+	\project{Einthusan Monitor}{A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. Published on chrome webstore with 2500+ users. Code available on Github (zambrey).}{Javascript, HTML/CSS}
+	\project{Voice2Text Logger}{An application which transcribes Skype voice calls into plain text. Major components were silence detection and removal, speech to text conversion, chronological arrangement of text generating the original conversation.}{(C\#, Python)}
+	\project{Web proxy, server and client communication}{Programmed web proxy, server and client with socket communication, shared memory communication and functionality of Remote Procedure Calls (RPC) for encryption/decryption inclusive of support for internet browser communication.}{(C)}
+	\project{Particle and rigid bodies simulation}{Animated particles in three scenarios; falling under gravity, constrained on circular path, constrained in a sphere with inter-particle collisions. Simulated rigid body physics for pool game with game objects as rigid bodies and implementation of colliding and resting contacts, friction, momentum, impulse, torque computations and quaternions for orientation representation.}{(C++)}
+	%\project{Video game development}{Worked on three titles right from game idea development, prototype development, art, music leading to final playable version.}{(Unity 3D)}
+\end{itemize}
+\end{document}
