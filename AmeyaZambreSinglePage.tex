@@ -1,6 +1,6 @@
 \documentclass[a4paper]{article}
-\usepackage{multirow}
 \usepackage[margin=1cm]{geometry}
+\usepackage{hyperref}
 
 %Custom commands
 \newcommand{\resumesection}[1]{
@@ -32,8 +32,8 @@
 \center
 {
 	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
-		{\textbf{\begin{LARGE}Ameya Zambre\end{LARGE}}}\footnotesize{ zambrey.github.io} & ameyazambre@gmail.com\\
-		3139 La Selva Cir, San Mateo CA 94403 & (313) 412 - 0669
+		{\textbf{\begin{LARGE}Ameya Zambre\end{LARGE}}}\footnotesize{   zambrey.github.io} & ameyazambre@gmail.com\\
+		13854 NE 8th St, Bellevue WA 980005 & (313) 412 - 0669
 	\end{tabular*}
 }
 
@@ -41,14 +41,19 @@
 
 %Experience
 \resumesection{Experience}
-\experiencesubsection{Oracle America Inc.}{Senior Software Engineer}{Nov 2014 - Present}
-\experiencesubsection{}{Software Engineer}{Mar 2013 - Nov 2014}
+\experiencesubsection{Microsoft}{SDE II}{May 2016 - Present}
+\begin{itemize}
+%\customitemizespacing
+	\item Working with Office's Excel team for Universal platform(UWP).
+	\item Currently working on a \href{https://techcrunch.com/2017/09/26/microsoft-excel-is-about-to-get-a-lot-smarter/}{project} to support newer complex data types in Excel. Working specifically on creating an interface to present the complex data across all end points of excel(Desktop, iOS, Android and Web).
+	\techitem{C++, Java, TypeScript, React Native}
+\end{itemize}
+\experiencesubsection{Oracle America Inc.}{Senior Software Engineer}{Mar 2013 - May 2016}
 \begin{itemize}
 %\customitemizespacing
 	\item Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user.
 	\item Worked independently on a couple of features for the web client. Implemented a feature to provide freestyle drawing support and save it as a picture. Upgraded a dated HTML text editor to CKEditor with backward compatibility with textual data created with older editors.
-	\item Working independently on iPad application. 
-	Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well). Responsible for supporting all new features being developed on iPad browser and application and for uptaking latest iOS SDKs.
+	\item Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well) for iPad application. Responsible for supporting all new features being developed on iPad Safari and the app and for uptaking latest iOS SDKs.
 	\techitem{Java, Javascript(HTML/CSS), Objective-C}
 \end{itemize}
 
@@ -74,15 +79,15 @@
 \resumesection{Technical Skills}
 \begin{itemize}
 %\customitemizespacing
-	\item Java, Javascript, Objective-C, C, HTML/CSS, SQL
+	\item Java, Javascript/TypeScript, Objective-C, C/C++, HTML/CSS
 	\item JDeveloper, Eclipse, XCode, Clearcase, Subversion
 \end{itemize}
 
 %Education
 \resumesection{Education}
-\educationsubsection{M.S. Computer Science}{2011 - 2012}{Georgia Institute of Technology(Georgia Tech)}{3.66 / 4.00}
+\educationsubsection{M.S. Computer Science}{2011 - 2012}{Georgia Institute of Technology(Georgia Tech)}{}
 \newline
-\educationsubsection{B.E. Computer Science, M.Sc. Mathematics}{2006 - 2011}{Birla Institute of Technology and Science, Pilani(BITS Pilani)}{8.90 / 10.00}
+\educationsubsection{B.E. Computer Science, M.Sc. Mathematics}{2006 - 2011}{Birla Institute of Technology and Science, Pilani(BITS Pilani)}{}
 
 %Projects
 \resumesection{Projects}
@@ -90,7 +95,7 @@
 	\project{Einthusan Monitor}{A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. Published on chrome webstore with 2500+ users. Code available on Github (zambrey).}{Javascript, HTML/CSS}
 	\project{zambrey.github.io}{A responsive personal webpage not using any existing responsive frameworks.}{AngularJS, HTML/CSS}
 	\project{SalaRead}{A visualization tool for public salaries data of Georgia Tech faculty. We imported and cleaned up publicly available salaries data of last 4 years to Google Fusion Tables. Utilizing that we developed an interactive visualization system using Google Charts plotting data against various parameters to provide more insight to the data.}{Javascript(HTML/CSS), Google Charts, Google Fusion Tables}
-	\project{Voice2Text Logger}{An application which transcribes Skype voice calls into plain text. Major components were silence detection and removal, speech to text conversion, chronological arrangement of text generating the original conversation.}{(C\#, Python)}
+	%\project{Voice2Text Logger}{An application which transcribes Skype voice calls into plain text. Major components were silence detection and removal, speech to text conversion, chronological arrangement of text generating the original conversation.}{(C\#, Python)}
 	%\project{Web proxy, server and client communication}{Programmed web proxy, server and client with socket communication, shared memory communication and functionality of Remote Procedure Calls (RPC) for encryption/decryption inclusive of support for internet browser communication.}{(C)}
 	%\project{Particle and rigid bodies simulation}{Animated particles in three scenarios; falling under gravity, constrained on circular path, constrained in a sphere with inter-particle collisions. Simulated rigid body physics for pool game with game objects as rigid bodies and implementation of colliding and resting contacts, friction, momentum, impulse, torque computations and quaternions for orientation representation.}{(C++)}
 	%\project{Video game development}{Worked on three titles right from game idea development, prototype development, art, music leading to final playable version.}{(Unity 3D)}
