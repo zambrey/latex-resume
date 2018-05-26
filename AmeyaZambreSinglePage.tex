@@ -22,7 +22,7 @@
 } %{Degree}{Duration}{University/College}{GPA}
 \newcommand{\horizontalrule}[1]{\noindent{\rule{\textwidth}{#1}}} %{lineWeight}
 \newcommand{\techitem}[1]{\item Technology: \textbf{#1}} %{Tools}
-\newcommand{\project}[3]{\item \textbf{#1:} #2\textbf{(#3)}} %{Title}{Description}{Tools}
+\newcommand{\project}[3]{\item \textbf{#1}#2 \textbf{(#3)}} %{Title}{Description}{Tools}
 \newcommand{\customitemizespacing}{\addtolength{\itemsep}{-0.5\baselineskip}}
 
 \begin{document}
@@ -44,36 +44,36 @@
 \experiencesubsection{Microsoft}{SDE II}{May 2016 - Present}
 \begin{itemize}
 %\customitemizespacing
-	\item Worked on a \href{https://techcrunch.com/2017/09/26/microsoft-excel-is-about-to-get-a-lot-smarter/}{project} to create an interface(Cards) for newly supported entity values in Excel on all endpoints (Win32, UWP, Android, iOS and Web). Part of the core team responsible for architectural design of the feature. Built initial prototypes for evaluation. One of the key contributors in multiple aspects of the initial implementation. (\textbf{Java, C++, C\#})
-	\item Implemented React Native based componentized UI for cards on Android, iOS and Win32 endpoints. This reduced development efforts for the team as more code could be shared across all three platforms. (\textbf{JavaScript/TypeScript, React Native})
-	\item Worked on leveraging \href{http://adaptivecards.io/}{Microsoft Adaptive Cards} to support multiple layouts in cards with ease. Developed a JSON data binding solution to complement adaptive cards schema. With this work a third-party content provider can author their own card layouts without any additional code. (\textbf{TypeScript})
-	\item Currently working on a feature that will allow us to push updates to the cards feature faster. The details are not yet public. (\textbf{C++})
+	\project{}{Worked on a \href{https://techcrunch.com/2017/09/26/microsoft-excel-is-about-to-get-a-lot-smarter/}{project} to create an interface(Cards) for newly supported entity values in Excel on all endpoints (Win32, UWP, Android, iOS and Web). Part of the core team responsible for architectural design of the feature. Built initial prototypes for evaluation. One of the key contributors in multiple aspects of the initial implementation.}{Java, C++, C\#}
+	\project{}{Implemented React Native based componentized UI for cards on Android, iOS and Win32 endpoints. This reduced development efforts for the team as more code could be shared across all three platforms.}{JavaScript/TypeScript, React Native}
+	\project{}{Worked on leveraging \href{http://adaptivecards.io/}{Microsoft Adaptive Cards} to support multiple layouts in cards with ease. Developed a JSON data binding solution to complement adaptive cards schema. With this work a third-party content provider can author their own card layouts without any additional code.}{TypeScript}
+	\project{}{Currently working on a feature that will allow us to push updates to the cards feature faster. The details are not yet public.}{C++}
 	% \techitem{Java, TypeScript, C++, React Native}
 \end{itemize}
 \experiencesubsection{Oracle America Inc.}{Senior Software Engineer}{Mar 2013 - May 2016}
 \begin{itemize}
 %\customitemizespacing
-	\item Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user. (\textbf{Java, JavaScript})
-	\item Worked independently on a couple of features for the web client. Implemented a feature to provide freestyle drawing support and save it as a picture. Upgraded a dated HTML text editor to CKEditor with backward compatibility with textual data created with older editors. (\textbf{Java, JavaScript})
-	\item Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well) for iPad application. Responsible for supporting all new features being developed on iPad Safari and the app and for uptaking latest iOS SDKs. (\textbf{Java, Objective-C})
+	\project{} {Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user.}{Java, JavaScript}
+	\project{} {Worked independently on a couple of features for the web client. Implemented a feature to provide freestyle drawing support and save it as a picture. Upgraded a dated HTML text editor to CKEditor with backward compatibility with textual data created with older editors.}{Java, JavaScript}
+	\project{} {Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well) for iPad application. Responsible for supporting all new features being developed on iPad Safari and the app and for uptaking latest iOS SDKs.}{Java, Objective-C}
 	% \techitem{Java, JavaScript(HTML/CSS), Objective-C}
 \end{itemize}
 
 \experiencesubsection{Epic Systems}{Software Developer Intern}{May 2012 - Aug 2012}
 \begin{itemize}
 %\customitemizespacing
-	\item Designed and developed an intuitive direct manipulation based interface to help hospital staff assess Emergency Department status quickly and take appropriate actions right away. (\textbf{C\#})
-	% \item Involved providing touch and vector graphics support to facilitate installations on big touch screens at triage stations and very intuitive interface so that the staff can start utilizing the tool with minimal training.
+	\project{}{Designed and developed an intuitive direct manipulation based interface to help hospital staff assess Emergency Department status quickly and take appropriate actions right away.}{C\#}
+	% \project{}{Involved providing touch and vector graphics support to facilitate installations on big touch screens at triage stations and very intuitive interface so that the staff can start utilizing the tool with minimal training.}
 	% \techitem{C\#}
 \end{itemize}
 
 \experiencesubsection{Intel India Pvt. Ltd.}{Software Developer Intern}{Jan 2011 - Jun 2011}
 \begin{itemize}
 %\customitemizespacing
-	\item Worked on a couple of projects to improve the team's effectiveness like an improved logging tool and a componentized framework for easy UI adaptation. (\textbf{C\#})
-	% \item Developed a logging based debugging library to let developers easily create logs and figure out root cause of the issue at hand.
-	% \item Developed a GUI framework of team's existing UI to make it easily reusable and adaptable by other teams.
-	% \item Both projects helped improve team's efficiency by removing unnecessary and time-consuming tasks from developers' work.
+	\project{}{Worked on a couple of projects to improve the team's effectiveness like an improved logging tool and a componentized framework for easy UI adaptation.}{C\#}
+	% \project{}{Developed a logging based debugging library to let developers easily create logs and figure out root cause of the issue at hand.}
+	% \project{}{Developed a GUI framework of team's existing UI to make it easily reusable and adaptable by other teams.}
+	% \project{}{Both projects helped improve team's efficiency by removing unnecessary and time-consuming tasks from developers' work.}
 	% \techitem{C\#}
 \end{itemize}
 
@@ -95,12 +95,12 @@
 %Projects
 \resumesection{Projects}
 \begin{itemize}
-	\project{Einthusan Monitor}{A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. It was published on chrome webstore with 2500+ users. Code available on Github (zambrey).}{Javascript, HTML/CSS}
-	\project{zambrey.github.io}{A responsive personal webpage not using any existing responsive frameworks.}{AngularJS, HTML/CSS}
-	% \project{SalaRead}{A visualization tool for public salaries data of Georgia Tech faculty. We imported and cleaned up publicly available salaries data of last 4 years to Google Fusion Tables. Utilizing that we developed an interactive visualization system using Google Charts plotting data against various parameters to provide more insight to the data.}{Javascript(HTML/CSS), Google Charts, Google Fusion Tables}
-	%\project{Voice2Text Logger}{An application which transcribes Skype voice calls into plain text. Major components were silence detection and removal, speech to text conversion, chronological arrangement of text generating the original conversation.}{(C\#, Python)}
-	\project{Web proxy, server and client communication}{Programmed web proxy, server and client with socket communication, shared memory communication and functionality of Remote Procedure Calls (RPC) for encryption/decryption inclusive of support for internet browser communication.}{(C)}
-	%\project{Particle and rigid bodies simulation}{Animated particles in three scenarios; falling under gravity, constrained on circular path, constrained in a sphere with inter-particle collisions. Simulated rigid body physics for pool game with game objects as rigid bodies and implementation of colliding and resting contacts, friction, momentum, impulse, torque computations and quaternions for orientation representation.}{(C++)}
-	%\project{Video game development}{Worked on three titles right from game idea development, prototype development, art, music leading to final playable version.}{(Unity 3D)}
+	\project{Einthusan Monitor: }{A solution to monitor a movie website for latest movies and also to search in existing movies using website's REST services. It was published on chrome webstore with 2500+ users. Code available on Github (zambrey).}{JavaScript, HTML/CSS}
+	\project{zambrey.github.io: }{A responsive personal webpage not using any existing responsive frameworks.}{AngularJS, HTML/CSS}
+	% \project{SalaRead: }{A visualization tool for public salaries data of Georgia Tech faculty. We imported and cleaned up publicly available salaries data of last 4 years to Google Fusion Tables. Utilizing that we developed an interactive visualization system using Google Charts plotting data against various parameters to provide more insight to the data.}{Javascript(HTML/CSS), Google Charts, Google Fusion Tables}
+	%\project{Voice2Text Logger: }{An application which transcribes Skype voice calls into plain text. Major components were silence detection and removal, speech to text conversion, chronological arrangement of text generating the original conversation.}{(C\#, Python)}
+	\project{Web proxy, server and client communication: }{Programmed web proxy, server and client with socket communication, shared memory communication and functionality of Remote Procedure Calls (RPC) for encryption/decryption inclusive of support for internet browser communication.}{(C)}
+	%\project{Particle and rigid bodies simulation: }{Animated particles in three scenarios; falling under gravity, constrained on circular path, constrained in a sphere with inter-particle collisions. Simulated rigid body physics for pool game with game objects as rigid bodies and implementation of colliding and resting contacts, friction, momentum, impulse, torque computations and quaternions for orientation representation.}{(C++)}
+	%\project{Video game development: }{Worked on three titles right from game idea development, prototype development, art, music leading to final playable version.}{(Unity 3D)}
 \end{itemize}
 \end{document}
